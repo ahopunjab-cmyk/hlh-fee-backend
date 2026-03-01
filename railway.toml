@@ -1,0 +1,11 @@
+# Railway Deployment Config
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "node backend/server.js"
+restartPolicyType = "on-failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "hlh-fee-saas"
