@@ -1,6 +1,6 @@
 const express = require('express');
-const db = require('../db');
-const { authenticate, requireAdmin } = require('../middleware/auth');
+const db = require('./index');
+const { authenticate, requireAdmin } = require('./authmw');
 const router = express.Router();
 
 // All routes require auth

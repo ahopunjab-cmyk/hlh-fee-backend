@@ -1,6 +1,6 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const db = require('../db');
+const db = require('./index');
 const router = express.Router();
 
 // ── Super Admin Key middleware ─────────────────────────────────────────────────
